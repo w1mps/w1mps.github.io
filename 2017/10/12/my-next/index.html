@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script> <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-minimal.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #FFF; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #FFF, 0 0 5px #FFF; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #FFF;    /*上边框颜色*/
+        border-left-color: #FFF;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="misc," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="emmmmmmmmm，Next主题配置的大约那么一览……">
+<meta name="keywords" content="misc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NEXT主题个性化配置参考">
+<meta property="og:url" content="http://w1mps.github.io/2017/10/12/my-next/index.html">
+<meta property="og:site_name" content="w1mps的草稿箱">
+<meta property="og:description" content="emmmmmmmmm，Next主题配置的大约那么一览……">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-14T06:59:33.593Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NEXT主题个性化配置参考">
+<meta name="twitter:description" content="emmmmmmmmm，Next主题配置的大约那么一览……">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":": ${query}","hits_stats":"${hits}"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://w1mps.github.io/2017/10/12/my-next/"/>
+
+
+
+
+
+  <title>NEXT主题个性化配置参考 | w1mps的草稿箱</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+</head>
+
+
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+  
+    
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">w1mps的草稿箱</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">灵感总是闪得太快我怕抓不住|･ω･｀)</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://w1mps.github.io/2017/10/12/my-next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="w1mps">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="w1mps的草稿箱">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">NEXT主题个性化配置参考</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-12T20:01:44+08:00">
+                2017-10-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/misc/" itemprop="url" rel="index">
+                    <span itemprop="name">misc</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>emmmmmmmmm，Next主题配置的大约那么一览……<br><a id="more"></a><br>这里是我当时自己修改博客主题的时候涉及到的一些修改方式，以下都是以next的Muse主题为例。主题的修改不仅一种方法，我这里只是抛砖引玉一下下…如果有更好的修改方式或修改之处，欢迎找咱们交流。<br><b>注：主题配置文件中能够修改的这里就不再提了~</b></p>
+<h1 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h1><p>文件路径：<code>./source/css/_custom/custom.styl</code><br>操作：添加代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line"> background:url(图片相对路径/图片外链);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="自定义代码块"><a href="#自定义代码块" class="headerlink" title="自定义代码块"></a>自定义代码块</h1><p>文件路径：<code>./source/css/_custom/custom.styl</code><br>操作：添加代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">code &#123;</span><br><span class="line">    color: #fff;</span><br><span class="line">    background: #000;</span><br><span class="line">    margin: 1px;</span><br><span class="line">&#125;</span><br><span class="line">.highlight, code, pre &#123;</span><br><span class="line">    border: 1px solid ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="自定义底部文字及添加访问量"><a href="#自定义底部文字及添加访问量" class="headerlink" title="自定义底部文字及添加访问量"></a>自定义底部文字及添加访问量</h1><p>文件路径：<code>./layout/_partials/footer.swig</code><br>操作：替换代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;copyright&quot; &gt;</span><br><span class="line">  &#123;% set current = date(Date.now(), &quot;YYYY&quot;) %&#125;</span><br><span class="line">  &amp;copy; &#123;% if theme.since and theme.since != current %&#125; &#123;&#123; theme.since &#125;&#125; - &#123;% endif %&#125;</span><br><span class="line">  &lt;script async src=&quot;https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">  &lt;span itemprop=&quot;copyrightYear&quot;&gt;&#123;&#123; current &#125;&#125;&lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;with-love&quot;&gt;</span><br><span class="line">    &lt;i class=&quot;fa fa-&#123;&#123; theme.authoricon &#125;&#125;&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;author&quot; itemprop=&quot;copyrightHolder&quot;&gt;&#123;&#123; config.author &#125;&#125;&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&#123;% if theme.copyright %&#125;</span><br><span class="line">//----华丽丽的分界线----</span><br><span class="line">//替换以下内容再做修改即可</span><br><span class="line">&lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">  &lt;a class=&quot;theme-link&quot;&gt;你还会是灯塔吗？？&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;theme-info&quot;&gt;</span><br><span class="line">  &lt;a class=&quot;theme-link&quot;&gt;不，我将会是太阳！&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;&lt;/br&gt;</span><br><span class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</span><br><span class="line">  嗨，这里已经有&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;个人来过啦！</span><br><span class="line">&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>注：</p>
+<ul>
+<li><code>&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;</code>代表单个用户连续点击n篇文章，记录n次访问量</li>
+<li><code>&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;</code>代表单个用户连续点击n篇文章，只记录1次访客数</li>
+</ul>
+<h1 id="顶部加载条"><a href="#顶部加载条" class="headerlink" title="顶部加载条"></a>顶部加载条</h1><p>可以在主题配置文件中修改，但是我当时是用的添加代码的方式做的修改。<br>文件路径：<code>./layout/_partials/head.swig</code><br>操作：添加代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;//cdn.bootcss.com/pace/1.0.2/pace.min.js&quot;&gt;&lt;/script&gt; &lt;link href=&quot;//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-minimal.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    .pace .pace-progress &#123;</span><br><span class="line">        background: #FFF; /*进度条颜色*/</span><br><span class="line">        height: 3px;</span><br><span class="line">    &#125;</span><br><span class="line">    .pace .pace-progress-inner &#123;</span><br><span class="line">         box-shadow: 0 0 10px #FFF, 0 0 5px #FFF; /*阴影颜色*/</span><br><span class="line">    &#125;</span><br><span class="line">    .pace .pace-activity &#123;</span><br><span class="line">        border-top-color: #FFF;    /*上边框颜色*/</span><br><span class="line">        border-left-color: #FFF;    /*左边框颜色*/</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="添加网易云"><a href="#添加网易云" class="headerlink" title="添加网易云"></a>添加网易云</h1><p>在网页版的网易云音乐中搜索音乐，然后点击生成外链播放器，再放到你想要放的地方，这里我放到了侧边栏。<br>文件路径：<code>./layout/_macro/sidebar.swig</code><br>操作：这里看个人需求放的位置，我的位置参照以下代码上下文<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;# Blogroll #&#125;</span><br><span class="line">        &#123;% if theme.links %&#125;</span><br><span class="line">          &lt;div class=&quot;links-of-blogroll motion-element &#123;&#123; &quot;links-of-blogroll-&quot; + theme.links_layout | default(&apos;inline&apos;) &#125;&#125;&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;links-of-blogroll-title&quot;&gt;</span><br><span class="line">              &lt;i class=&quot;fa  fa-fw fa-&#123;&#123; theme.links_icon | default(&apos;globe&apos;) | lower &#125;&#125;&quot;&gt;&lt;/i&gt;</span><br><span class="line">              &#123;&#123; theme.links_title &#125;&#125;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">            &lt;ul class=&quot;links-of-blogroll-list&quot;&gt;</span><br><span class="line">              &#123;% for name, link in theme.links %&#125;</span><br><span class="line">                &lt;li class=&quot;links-of-blogroll-item&quot;&gt;</span><br><span class="line">                  &lt;a href=&quot;&#123;&#123; link &#125;&#125;&quot; title=&quot;&#123;&#123; name &#125;&#125;&quot; target=&quot;_blank&quot;&gt;&#123;&#123; name &#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;/li&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">            &lt;/ul&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line">        &#123;% endif %&#125;</span><br><span class="line">        //划重点！！！！</span><br><span class="line">	&lt;div id=&quot;music163player&quot;&gt;</span><br><span class="line">		&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=35618534&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">	&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="全局颜色设定"><a href="#全局颜色设定" class="headerlink" title="全局颜色设定"></a>全局颜色设定</h1><p>文件路径：<code>./source/css/_variables/base.styl</code><br>操作：自行修改，建议是不要替换变量名不然修改起来十分麻烦，替换值就好。</p>
+<h1 id="侧边栏的修改"><a href="#侧边栏的修改" class="headerlink" title="侧边栏的修改"></a>侧边栏的修改</h1><h2 id="侧边栏背景透明"><a href="#侧边栏背景透明" class="headerlink" title="侧边栏背景透明"></a>侧边栏背景透明</h2><p>文件路径：<code>./source/css/_common/components/sidebar/ sidebar.styl</code><br>操作：设置<code>background: transparent</code></p>
+<h3 id="增设手机端"><a href="#增设手机端" class="headerlink" title="增设手机端"></a>增设手机端</h3><p>这里我们设置成透明后，手机端会受到一定的影响，影响美观，所以需要在手机端增设背景图<br>文件路径：<code>./source/css/_common/components/sidebar/ sidebar.styl</code><br>操作：设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">+mobile() &#123;</span><br><span class="line">    background: url(图片相对路径/图片外链);</span><br><span class="line">    hide() if not hexo-config(&apos;sidebar.onmobile&apos;);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="侧边栏边框透明"><a href="#侧边栏边框透明" class="headerlink" title="侧边栏边框透明"></a>侧边栏边框透明</h2><p>文件路径：<code>./source/css/_common/components/sidebar/sidebar.styl</code><br>操作：设置<code>box-shadow: inset 0 0px 0px transparent</code></p>
+<h1 id="菜单选项背景透明"><a href="#菜单选项背景透明" class="headerlink" title="菜单选项背景透明"></a>菜单选项背景透明</h1><p>文件路径：<code>./source/css/_variables/base.styl</code><br>操作：<code>$head-bg = transparent</code></p>
+<h1 id="博客名称背景透明"><a href="#博客名称背景透明" class="headerlink" title="博客名称背景透明"></a>博客名称背景透明</h1><p>文件路径：<code>./source/css/_variables/base.styl</code><br>操作：<code>$brand-bg  = transparent</code></p>
+<h1 id="标签页面-tags设定"><a href="#标签页面-tags设定" class="headerlink" title="标签页面 tags设定"></a>标签页面 tags设定</h1><p>文件路径：<code>./layout/page.swig</code><br>操作：根据需求自行修改,若要修改字体大小建议这里的<code>min_font</code>和<code>max_font</code>统一。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;tag-cloud-tags&quot;&gt;</span><br><span class="line">              &#123;&#123; tagcloud(&#123;min_font: 15, max_font: 15, amount: 200, color: true, start_color: &apos;#fff&apos;, end_color: &apos;#fff&apos;&#125;) &#125;&#125;</span><br><span class="line">            &lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="本地搜索功能的个性化设置"><a href="#本地搜索功能的个性化设置" class="headerlink" title="本地搜索功能的个性化设置"></a>本地搜索功能的个性化设置</h1><h2 id="Localsearch的安装"><a href="#Localsearch的安装" class="headerlink" title="Localsearch的安装"></a>Localsearch的安装</h2><p>在博客根目录下执行：</p>
+<ul>
+<li>安装hexo-generator-search  <code>npm install hexo-generator-search --save</code></li>
+<li>安装 hexo-generator-searchdb  <code>npm install hexo-generator-searchdb --save</code></li>
+<li>编辑博客配置文件，添加下列代码即可：  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">path: search.xml</span><br><span class="line">field: post</span><br><span class="line">format: html</span><br><span class="line">limit: 10000</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><b>注：现版本的Next集合了该功能，在主题配置文件中找到localsearch，打开即可。</b></p>
+<h2 id="个性化设置"><a href="#个性化设置" class="headerlink" title="个性化设置"></a>个性化设置</h2><p>文件路径： <code>./source/css/_common/components/third-party/localsearch.styl</code>  </p>
+<h2 id="添加搜索条背景"><a href="#添加搜索条背景" class="headerlink" title="添加搜索条背景"></a>添加搜索条背景</h2><p>操作：在<code>.local-search-header</code>中添加<code>background: url(图片相对路径/图片外链)</code><br>若是仅修改颜色修改color即可。</p>
+<h2 id="添加搜索结果背景"><a href="#添加搜索结果背景" class="headerlink" title="添加搜索结果背景"></a>添加搜索结果背景</h2><p>操作：在<code>.local-search-popup</code>中添加<code>background: url(图片相对路径/图片外链)</code><br>若是仅修改颜色修改color即可。</p>
+<h2 id="自定义关键字颜色"><a href="#自定义关键字颜色" class="headerlink" title="自定义关键字颜色"></a>自定义关键字颜色</h2><p>操作：在<code>search-keyword</code>找到<code>color</code>设置即可。  </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/misc/" rel="tag"><i class="fa fa-tag"></i> misc</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/10/base64-stego/" rel="next" title="一道有趣的隐写题">
+                <i class="fa fa-chevron-left"></i> 一道有趣的隐写题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/26/sqli-labs-23-28/" rel="prev" title="sqli-labs 23-28关训练">
+                sqli-labs 23-28关训练 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/avatar/avatar.jpg"
+               alt="w1mps" />
+          <p class="site-author-name" itemprop="name">w1mps</p>
+           
+              <p class="site-description motion-element" itemprop="description">山前未见，山后不逢</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+		<div id="music163player">
+			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=35618534&auto=0&height=66"></iframe>
+		</div>
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景图片"><span class="nav-number">1.</span> <span class="nav-text">背景图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义代码块"><span class="nav-number">2.</span> <span class="nav-text">自定义代码块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义底部文字及添加访问量"><span class="nav-number">3.</span> <span class="nav-text">自定义底部文字及添加访问量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#顶部加载条"><span class="nav-number">4.</span> <span class="nav-text">顶部加载条</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加网易云"><span class="nav-number">5.</span> <span class="nav-text">添加网易云</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#全局颜色设定"><span class="nav-number">6.</span> <span class="nav-text">全局颜色设定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏的修改"><span class="nav-number">7.</span> <span class="nav-text">侧边栏的修改</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏背景透明"><span class="nav-number">7.1.</span> <span class="nav-text">侧边栏背景透明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#增设手机端"><span class="nav-number">7.1.1.</span> <span class="nav-text">增设手机端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏边框透明"><span class="nav-number">7.2.</span> <span class="nav-text">侧边栏边框透明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#菜单选项背景透明"><span class="nav-number">8.</span> <span class="nav-text">菜单选项背景透明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#博客名称背景透明"><span class="nav-number">9.</span> <span class="nav-text">博客名称背景透明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标签页面-tags设定"><span class="nav-number">10.</span> <span class="nav-text">标签页面 tags设定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地搜索功能的个性化设置"><span class="nav-number">11.</span> <span class="nav-text">本地搜索功能的个性化设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Localsearch的安装"><span class="nav-number">11.1.</span> <span class="nav-text">Localsearch的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#个性化设置"><span class="nav-number">11.2.</span> <span class="nav-text">个性化设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加搜索条背景"><span class="nav-number">11.3.</span> <span class="nav-text">添加搜索条背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加搜索结果背景"><span class="nav-number">11.4.</span> <span class="nav-text">添加搜索结果背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义关键字颜色"><span class="nav-number">11.5.</span> <span class="nav-text">自定义关键字颜色</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">w1mps</span>
+</div>
+
+
+<div class="powered-by">
+  <a class="theme-link">你还会是灯塔吗？？</a>
+</div>
+
+<div class="theme-info">
+  <a class="theme-link">不，我将会是太阳！</a>
+</div></br>
+<span id="busuanzi_container_site_uv">
+  嗨，这里已经有<span id="busuanzi_value_site_uv"></span>个人来过啦！
+</span>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
